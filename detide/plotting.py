@@ -39,4 +39,5 @@ def plot_comparative_amplitudes(
 def plot_df(df: pd.DataFrame, label: str, color: str) -> hv.Curve:
     ts = df.copy()
     ts = ts.iloc[-744:] # last 31 days
+    ts = ts - ts.mean()
     return ts.hvplot(label=label, c=color, responsive = True)

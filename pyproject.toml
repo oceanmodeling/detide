@@ -8,9 +8,15 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13,<4.0"
 dependencies = [
-    "pytides2 @ git+https://github.com/WPringle/pytides.git@add-tidal-constituents",
+    "pytides2 @ git+https://github.com/oceanmodeling/pytides.git",
     "pandas",
     "pyarrow",
     "hvplot",
     "zensical"
 ]
+
+[tool.poetry.group.dev.dependencies]
+searvey = "*"
+pytest = "*"
+ioc-cleanup = {git = "https://github.com/oceanmodeling/ioc_cleanup.git"}
+

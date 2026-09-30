@@ -55,7 +55,7 @@ def pytides_get_coefs_df(ts: pd.Series, constituents: list) -> pd.DataFrame:
     )
 ```
 Visualize the Dataframe:
-<iframe src="assets/tidal_decomposition.html" width="100%" height="850" frameborder="0"></iframe>
+<iframe src="assets/tidal_decomposition_trst.html" width="100%" height="850" frameborder="0"></iframe>
 
 ### 3. Predict
 
@@ -113,7 +113,7 @@ surge_hourly = resample(surge)  # surgeMIP exception
 | `NOAA` | 37 | Direct comparison with NOAA CO-OPS tide predictions |
 | `EXTENDED` | 67 | Adds many more minor and satellite constituents to obtain a Rayleigh Criterion of 0.8 |
 
-<iframe src="assets/plot_compare.html" width="100%" height="720" frameborder="0"></iframe>
+<iframe src="assets/plot_compare_trst.html" width="100%" height="720" frameborder="0"></iframe>
 
 ## Output metadata
 
