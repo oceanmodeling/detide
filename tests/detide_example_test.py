@@ -18,10 +18,13 @@ from detide.detide import resample
 STATION = pytest.mark.parametrize(
     "station,sensor",
     [   #            station sensor
-        pytest.param("npor", "bub", id="cuxh"),
+        pytest.param("npor", "bub", id="npor"),
         pytest.param("cuxh", "flt", id="cuxh"),
-        pytest.param("trst", "aqu", id="brom"),
+        pytest.param("trst", "aqu", id="trst"),
         pytest.param("brom", "aqu", id="brom"),
+        pytest.param("vard", "rad", id="vard"),
+        pytest.param("treg", "flt", id="treg"),
+        pytest.param("lerw2", "bub", id="lerw2"),
     ]
 )
 
