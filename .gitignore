@@ -4,3 +4,5 @@ __pycache__/
 .vscode/
 .venv/
 site/
+build/
+detide.egg-info/
